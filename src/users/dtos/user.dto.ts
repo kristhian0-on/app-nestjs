@@ -1,5 +1,7 @@
-import { ApiProperty } from "@nestjs/swagger";
+import { ApiProperty } from '@nestjs/swagger';
+import { Entity } from 'typeorm';
 
+@Entity()
 export class UserDto {
   @ApiProperty()
   name: string;
